@@ -18,8 +18,13 @@ library(tidyverse)
 c(1,2,3) %>% map(function(a) a^0.5)
 ```
 
+
 ```{r}
 c(1,2,3) %>% map(sqrt)
+```
+
+```{r}
+tibble(a=c(4,3,5), b=c(8,9,5)) %>%  map(sqrt)
 ```
 
 
