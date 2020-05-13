@@ -38,7 +38,12 @@ list(list(5, 27, 50), list(1000, 1000, 1000)) %>%
 multiply <- function(a, b) {
   a * b
 }
+```
 
+
+
+```{r}
 list(list(5, 27, 50), list(1000, 1000, 1000)) %>%
   pmap( ~ multiply(..1, ..2))
 ```
+
