@@ -1,0 +1,44 @@
+---
+title: "Purr Eval"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(tidyverse)
+```
+
+## Map
+
+```{r}
+c(1,2,3) %>% map(function(a) a^0.5)
+```
+
+```{r}
+c(1,2,3) %>% map(sqrt)
+```
+
+
+```{r}
+c(1,2,3) %>% map(~sqrt(.))
+```
+
+## multiple 
+
+```{r}
+list(list(5, 27, 50), list(1000, 1000, 1000)) %>% 
+  pmap(function(a,b) a*b)
+```
+
+```{r}
+multiply <- function(a, b) {
+  a * b
+}
+
+list(list(5, 27, 50), list(1000, 1000, 1000)) %>%
+  pmap( ~ multiply(..1, ..2))
+```
