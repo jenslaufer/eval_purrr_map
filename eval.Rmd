@@ -84,15 +84,3 @@ tibble(group = "1",
 
 
 ```
-
-# Welche Trends
-
-Die Welt ist einem ständigen Wandel unterworfen: So ist die Wirtschaft im Fluss, technologisch gibt es Neuerungen, in jedem Moment entstehen neue Nachrichten, weil Politik und Gesellschaft Veränderungen unterworfen ist,
-Modeerscheinungen entstehen im Freizeitbereich entstehen.
-
-Im Rahmen dieser Veränderungen ergeben sich neue Trends, weswegen es sich lohnt diese zu beobachten, weil sie Chancen für neue Geschäftsmodelle bietet. Im Rahmen einer Trendsportart entsteht z.B. Bedarf an völlig neuen Produkten oder es entstehen neue Kundenprobleme, die gelöst werden müssen. Im Rahmen der Coronakrise z.B. entstand der ein Bedarf zum Tragen von Masken, weil jeder verpflichtet war diese beim Einkaufen zu tragen.
-
-## Google Trends
-
-Über Google Trends kannst du dir regelmässig Bericht zusenden lassen über Suchbegriffe, die gerade im Trend liegen. Egal ob du schon ein Geschäftsmodell gefunden hast, solltest du das auf jeden Fall tum, um auf keinen Fall
-Trends in den für dich interessanten Themengebieten zu verpassen.
