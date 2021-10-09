@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+author: "Jens Laufer"
+date: "9 10 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+data <- tibble(Ad = rep("A", times = 5000) ,
+       Click = rep(c(0, 1), times = c(4500, 500))) %>%
+  bind_rows(tibble(
+    Ad = rep("B", times = 5000) ,
+    Click = rep(c(0, 1), times = c(4430, 570))
+  )) 
+
+
+data %>% 
+  table() %>% 
+  fisher.test()
+
+
+data %>% 
+  table() %>% 
+  chisq.test()
+
+```
+
