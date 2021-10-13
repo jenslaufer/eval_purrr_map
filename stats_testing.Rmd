@@ -45,8 +45,5 @@ data %>%
 data %>%
   table() %>% 
   chisq.test()
-
-t.test(data %>% filter(Ad == "A") %>% pull(Click), 
-       data %>% filter(Ad == "B") %>% pull(Click))
 ```
 
