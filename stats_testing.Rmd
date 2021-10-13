@@ -32,7 +32,9 @@ getTestData <- function(numSampleA, clickedA, numSampleB, clickedB) {
 
 ```{r}
 
-data <- getTestData(200, 5, 250, 8)
+data <- getTestData(840, 5, 990, 11) %>% 
+  mutate(Ad=ifelse(Ad=="A", "C", "D")) %>% 
+  bind_rows(getTestData(1290,22,800,12))
 
 
 data %>% 
@@ -40,9 +42,11 @@ data %>%
   fisher.test()
 
 
-data %>% 
+data %>%
   table() %>% 
   chisq.test()
 
+t.test(data %>% filter(Ad == "A") %>% pull(Click), 
+       data %>% filter(Ad == "B") %>% pull(Click))
 ```
 
